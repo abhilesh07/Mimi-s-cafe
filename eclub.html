@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mimi's Cafe — E-CLUB</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Your custom styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- bootstrap icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    /* page-only tiny overrides */
+    .nav-left .nav-link, .nav-right .nav-link { white-space: nowrap; }
+    .nav-left, .nav-right { align-items: center; }
+    .nav-right .nav-link.active { color: var(--hero) !important; font-weight: 800; }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER: Centered logo with left & right navigation -->
+  <header class="site-header py-3">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <!-- LEFT NAV -->
+        <div class="col-12 col-md-4 d-flex flex-column flex-md-row align-items-center align-items-md-start">
+          <nav class="nav nav-left w-100 justify-content-center justify-content-md-start">
+            <a class="nav-link" href="menu.html">MAIN MENU <i class="bi bi-caret-down-fill small"></i></a>
+            <a class="nav-link" href="catering.html">CATERING</a>
+            <a class="nav-link" href="order.html">ORDER TO-GO</a>
+            <a class="nav-link" href="events.html">EVENTS</a>
+          </nav>
+        </div>
+
+        <!-- CENTER LOGO -->
+        <div class="col-12 col-md-4 d-flex justify-content-center my-2 my-md-0">
+          <a href="index.html" class="d-inline-block">
+            <img src="assets/logo.png" alt="Mimi's logo" class="logo-img">
+          </a>
+        </div>
+
+        <!-- RIGHT NAV -->
+        <div class="col-12 col-md-4 d-flex flex-column align-items-center align-items-md-end">
+          <nav class="nav nav-right justify-content-center justify-content-md-end">
+            <a class="nav-link active" href="eclub.html">E-CLUB</a>
+            <a class="nav-link" href="about.html">ABOUT MIMI'S <i class="bi bi-caret-down-fill small"></i></a>
+            <a class="nav-link" href="locations.html">LOCATIONS</a>
+          </nav>
+
+          <div class="socials mt-3 d-none d-md-block">
+            <a href="#" class="me-2"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="me-2"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="me-2"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- E-CLUB HERO (animated) -->
+  <section class="eclub-hero">
+    <div class="eclub-overlay"></div>
+
+    <div class="container text-center eclub-hero-content anim-fade-up">
+      <h1 class="anim-pop">MIMI'S E-CLUB</h1>
+
+      <p class="anim-fade-up delay-150">
+        Want the inside scoop on the latest menu items, special offers, and even a sweet<br>
+        reward on your birthday? Sign up for our E-Club today to receive all this and more,<br>
+        right in your inbox.
+      </p>
+    </div>
+  </section>
+
+  <!-- JOIN TODAY SECTION (animated title) -->
+  <section class="join-today text-center py-5">
+    <div class="container">
+      <h2 class="join-title-text anim-pop delay-200">Join Today!</h2>
+      <p class="join-subtitle">
+        Fill out the form below to get on the list, and let us know a little more about what you'd like to see.
+      </p>
+    </div>
+  </section>
+
+  <!-- SIGNUP CARD (animated rise) -->
+  <main class="py-4">
+    <div class="container">
+      <div id="signup" class="signup-card anim-raise">
+        <form class="row g-3">
+          <div class="col-12 col-md-6">
+            <label class="form-label">Full name</label>
+            <input class="form-control" type="text" placeholder="Your name" />
+          </div>
+
+          <div class="col-12 col-md-6">
+            <label class="form-label">Email</label>
+            <input class="form-control" type="email" placeholder="you@example.com" />
+          </div>
+
+          <div class="col-12 col-md-6">
+            <label class="form-label">Preferred location</label>
+            <select class="form-select">
+              <option selected>Choose a location</option>
+              <option>Local Mimi’s — Example City</option>
+            </select>
+          </div>
+
+          <div class="col-12 col-md-6 d-flex align-items-end">
+            <button class="btn btn-primary w-100 anim-pop-btn delay-300" type="button" style="background:var(--accent);border:none;padding:.65rem 1.25rem;font-weight:700">
+              Join E-Club
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- SIMPLE E-CLUB FOOTER -->
+  <footer class="eclub-footer">
+    <div class="container">
+      <p>© Mimi's Café — E-Club • <a href="index.html" style="color:var(--muted);text-decoration:underline">Return to home</a></p>
+    </div>
+  </footer>
+
+  <!-- SITE FOOTER (main) -->
+  <footer class="footer-section">
+    <div class="container py-5">
+
+      <div class="row text-center text-md-start gy-4">
+
+        <div class="col-12 col-md-2">
+          <h6 class="footer-title">CATERING</h6>
+          <a href="#" class="footer-link d-block">Order Catering</a>
+        </div>
+
+        <div class="col-12 col-md-2">
+          <h6 class="footer-title">PRIVATE EVENTS</h6>
+          <a href="#" class="footer-link d-block">Schedule Your Event</a>
+        </div>
+
+        <div class="col-12 col-md-2">
+          <h6 class="footer-title">ABOUT MIMI’S</h6>
+          <a href="#" class="footer-link d-block">Our Story</a>
+          <a href="#" class="footer-link d-block">Careers</a>
+          <a href="#" class="footer-link d-block">Gift Cards</a>
+          <a href="#" class="footer-link d-block">Contact Us</a>
+        </div>
+
+        <div class="col-12 col-md-3">
+          <h6 class="footer-title">CONTACT US</h6>
+          <p class="footer-text mb-1">Guest Relations:</p>
+          <a href="#" class="footer-link d-block">GuestRelations@mimiscafe.com</a>
+
+          <p class="footer-text mt-3 mb-1">Media Inquiries:</p>
+          <a href="#" class="footer-link d-block">MediaRelations@mimiscafe.com</a>
+        </div>
+
+        <div class="col-12 col-md-3">
+          <h6 class="footer-title">STAY CONNECTED</h6>
+          <a href="#" class="footer-link d-block">Join Mimi’s E-Club</a>
+
+          <div class="footer-social mt-3">
+            <a href="#" class="footer-social-icon"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="footer-social-icon"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="footer-social-icon"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="footer-social-icon"><i class="bi bi-pinterest"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom text-center py-3">
+      © 2022 MIMI'S CAFE CORPORATE | TERMS & CONDITIONS | PRIVACY POLICY
+    </div>
+  </footer>
+
+</body>
+</html>
