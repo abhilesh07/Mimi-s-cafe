@@ -853,9 +853,7 @@ a.btn, .nav-link, .promo-btn { min-height: 44px; display:inline-flex; align-item
 .site-header .socials a { color: var(--hdr-muted); font-size:16px; display:inline-flex; align-items:center; }
 .site-header .socials a:hover { color: var(--hdr-brand); }
 
-/* Highlight the Locations link reliably:
-   Add class="locations" to the link in HTML for guaranteed styling.
-   We also style any link containing 'locations' in href as fallback.
+/*
 */
 .site-header .nav-link.locations,
 .site-header a[href*="locations"] {
