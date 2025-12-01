@@ -754,4 +754,148 @@ a.btn, .nav-link, .promo-btn { min-height: 44px; display:inline-flex; align-item
   .occasion-title { font-size: clamp(1.6rem, 7vw, 2.2rem); }
   .occasion-text { font-size: 0.95rem; line-height: 1.65; }
 }
+/* ===========================
+   Header: center logo layout
+   Paste this at the BOTTOM of your existing stylesheet
+   =========================== */
+
+:root{
+  --hdr-muted: var(--muted);
+  --hdr-brand: var(--accent);
+}
+
+/* Ensure header row is a horizontal flex container (force if Bootstrap missing/overridden) */
+.site-header .row {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+}
+
+/* At md+ split into three equal columns */
+@media (min-width: 768px) {
+  .site-header .col-md-4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* Left column: keep stacked rows (primary nav + secondary nav) */
+.site-header .col-12.col-md-4.d-flex.flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 36px; /* align content with screenshot */
+}
+
+/* Primary left nav (first line) */
+.site-header .nav.nav-left {
+  gap: 36px;
+  align-items: center;
+}
+
+/* Secondary left nav (smaller spacing) */
+.site-header .nav.nav-left.second-row {
+  gap: 26px;
+  margin-top: 0;
+  padding-top: 4px;
+}
+
+/* Center column: logo centered */
+.site-header .col-md-4:nth-of-type(2) {
+  justify-content: center;
+  padding: 0;
+}
+
+/* Right column: align to right */
+.site-header .col-md-4:nth-of-type(3) {
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 36px;
+}
+
+/* Nav link visuals: muted uppercase, letterspacing, weight */
+.site-header .nav-link {
+  color: var(--hdr-muted) !important;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 13px;
+  padding: 6px 6px;
+  display: inline-block;
+  transition: color .16s ease, transform .12s ease;
+}
+
+/* subtle hover */
+.site-header .nav-link:hover,
+.site-header .nav-link:focus {
+  color: var(--hdr-brand) !important;
+  transform: translateY(-1px);
+  text-decoration: none;
+  outline: none;
+}
+
+/* Small caret after ABOUT MIMI'S (keeps small & muted) */
+.site-header .nav-link i.bi-caret-down-fill,
+.site-header .nav-link .small {
+  font-size: 10px;
+  margin-left: 6px;
+  color: var(--hdr-muted);
+}
+
+/* Socials group (rightmost) */
+.site-header .socials { display:flex; gap:14px; align-items:center; margin-left:18px; }
+.site-header .socials a { color: var(--hdr-muted); font-size:16px; display:inline-flex; align-items:center; }
+.site-header .socials a:hover { color: var(--hdr-brand); }
+
+/* Highlight the Locations link reliably:
+   Add class="locations" to the link in HTML for guaranteed styling.
+   We also style any link containing 'locations' in href as fallback.
+*/
+.site-header .nav-link.locations,
+.site-header a[href*="locations"] {
+  color: var(--hdr-brand) !important;
+  font-weight: 800;
+}
+
+/* Ensure center logo is vertically centered & constrained */
+.site-header .logo-img {
+  display:block;
+  height: 68px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Mobile: stack columns and center all navs */
+@media (max-width: 767.98px) {
+  .site-header .row { flex-direction: column; align-items: center; gap: 10px; padding: 12px 8px; }
+  .site-header .col-md-4 { max-width: 100%; flex: 0 0 100%; justify-content: center !important; padding: 0 8px; text-align: center; }
+  .site-header .col-12.col-md-4.d-flex.flex-column { align-items: center; padding-left: 0; }
+  .site-header .nav.nav-left, .site-header .nav.nav-right { justify-content: center; gap: 14px; }
+  .site-header .second-row { justify-content: center; }
+  .site-header .socials { justify-content: center; margin-top: 6px; }
+  .site-header .logo-img { height: 52px; }
+}
+
+/* Safety: if some rules have forced anchors to full width, reset them */
+.site-header .nav-link { max-width: none; }
+
+/* Accessibility: visible focus ring */
+.site-header .nav-link:focus {
+  box-shadow: 0 0 0 4px rgba(143,47,57,0.10);
+  border-radius: 4px;
+}
+
+/* Tiny tweak for exact spacing under logo */
+.site-header .col-12.col-md-4.d-flex.justify-content-center.mb-3.mb-md-0 {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+/**/
 
