@@ -754,3 +754,30 @@ a.btn, .nav-link, .promo-btn { min-height: 44px; display:inline-flex; align-item
   .occasion-title { font-size: clamp(1.6rem, 7vw, 2.2rem); }
   .occasion-text { font-size: 0.95rem; line-height: 1.65; }
 }
+/* Header layout for mobile (catering + all pages) */
+@media (max-width: 767.98px) {
+
+  /* Stack header rows vertically */
+  .site-header .row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 8px;
+  }
+
+  /* Center navs on mobile */
+  .site-header .nav {
+    justify-content: center;
+  }
+
+  /* Make links smaller so they fit better */
+  .nav-link {
+    padding: 4px 6px;
+    font-size: 13px;
+  }
+
+  /* Make logo a bit smaller on phones */
+  .logo-img {
+    max-height: 50px;
+  }
+}
