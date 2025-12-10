@@ -11,200 +11,211 @@
 
   <!-- Main CSS -->
   <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
 
-  <!-- =============== HEADER  =============== -->
-  <header class="site-header">
-    <div class="container">
-      <div class="header-inner">
+<!-- ================= HEADER ================= -->
+<header class="site-header py-3">
+  <div class="container">
+    <div class="row align-items-center justify-content-between">
 
-        <!-- Logo -->
-        <a href="index.html" class="brand">
-          <img src="assets/logo.png" alt="Mimi's Cafe" class="logo-img">
-        </a>
+      <!-- LEFT NAV -->
+      <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-start">
+        <nav class="nav nav-left">
+          <a class="nav-link" href="menu.html">MENU</a>
+          <a class="nav-link active" href="catering.html">CATERING</a>
+          <a class="nav-link" href="order.html">ORDER ONLINE</a>
+          <a class="nav-link" href="giftcard.html">GIFT CARDS</a>
 
-        <!-- Checkbox for CSS toggle -->
-        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+        </nav>
+      </div>
 
-        <!-- Hamburger icon -->
-        <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
-          <span></span>
-        </label>
+      <!-- LOGO -->
+      <div class="col-12 col-md-4 text-center">
+        <a href="index.html"><img src="assets/logo.png" class="logo-img" alt="Mimi's Logo"></a>
+      </div>
 
-        <!-- Main Navigation -->
-        <nav class="main-nav">
-          <ul class="nav-list">
-            <li><a class="nav-link" href="menu.html">MENU</a></li>
-            <li><a class="nav-link active" href="catering.html">CATERING</a></li>
-            <li><a class="nav-link" href="order.html">ORDER ONLINE</a></li>
-            <li><a class="nav-link" href="giftcard.html">GIFT CARDS</a></li>
-            <li><a class="nav-link" href="#feast">ORDER HOLIDAY FEAST</a></li>
-            <li><a class="nav-link" href="eclub.html">E-CLUB</a></li>
-            <li><a class="nav-link" href="about.html">ABOUT MIMI'S</a></li>
-            <li><a class="nav-link" href="locations.html">LOCATIONS / RESERVATIONS</a></li>
-          </ul>
-
-          <!-- Social icons -->
-          <div class="header-socials">
-            <a href="#"><i class="bi bi-facebook"></i></a>
-            <a href="#"><i class="bi bi-twitter"></i></a>
-            <a href="#"><i class="bi bi-instagram"></i></a>
-          </div>
+      <!-- RIGHT NAV -->
+      <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-end align-items-center">
+        <nav class="nav nav-right d-none d-md-flex">
+          <a class="nav-link" href="eclub.html">E-CLUB</a>
+          <a class="nav-link" href="about.html">ABOUT MIMI'S</a>
+          <a class="nav-link" href="locations.html">LOCATIONS</a>
         </nav>
 
-      </div>
-    </div>
-  </header>
-  <!-- =============== /HEADER =============== -->
-
-
-  <!-- =============== ORDER SECTION =============== -->
-  <section class="catering-order-section">
-    <div class="container">
-
-      <div class="row align-items-center text-center">
-
-        <!-- TOP LINE -->
-        <div class="col-12 mb-4">
-          <div class="order-line anim-fade-up"></div>
-        </div>
-
-        <!-- ORDER TO-GO -->
-        <div class="col-12 col-md-5 mb-5">
-          <img src="assets/ordertogo4.png" class="catering-order-logo anim-pop delay-100" alt="Order to-go">
-          <div class="catering-order-title anim-pop delay-150">ORDER<br>TO-GO</div>
-          <button class="catering-order-btn anim-pop-btn delay-200">ORDER NOW</button>
-        </div>
-
-        <!-- CENTER VERTICAL DIVIDER -->
-        <div class="col-md-2 d-none d-md-flex justify-content-center">
-          <div class="vertical-divider anim-fade-up delay-120"></div>
-        </div>
-
-        <!-- ORDER CATERING -->
-        <div class="col-12 col-md-5 mb-5">
-          <img src="assets/OrderCateringbutton.png" class="catering-order-logo anim-pop delay-100" alt="Order catering">
-          <div class="catering-order-title anim-pop delay-150">ORDER<br>CATERING</div>
-          <button class="catering-order-btn anim-pop-btn delay-200">PLACE ORDER</button>
-        </div>
-
-        <!-- BOTTOM LINE -->
-        <div class="col-12 mt-4">
-          <div class="order-line anim-fade-up delay-240"></div>
-        </div>
-
-      </div>
-
-      <!-- ====== CATERING TILES ====== -->
-      <div class="catering-tiles container mt-4">
-        <div class="catering-grid">
-
-          <a class="tile-link" href="#breakfast" aria-label="Breakfast trays and pastries">
-            <div class="tile anim-fade-up delay-100" style="background-image: url('assets/Breakfast.jpg');">
-              <div class="tile-overlay"></div>
-              <div class="tile-content">
-                <h3>BREAKFAST TRAYS &amp;<br>PASTRIES</h3>
-              </div>
-            </div>
-          </a>
-
-          <a class="tile-link" id="feast" href="#feast" aria-label="Order your holiday feast">
-            <div class="tile anim-fade-up delay-200" style="background-image: url('assets/2025Feast.jpg');">
-              <div class="tile-overlay"></div>
-              <div class="tile-content">
-                <h3>ORDER YOUR HOLIDAY<br>FEAST HERE</h3>
-              </div>
-            </div>
-          </a>
-
-          <a class="tile-link" href="#menu" aria-label="Full catering menu">
-            <div class="tile anim-fade-up delay-300" style="background-image: url('assets/Sandwich.jpg');">
-              <div class="tile-overlay"></div>
-              <div class="tile-content">
-                <h3>FULL CATERING MENU</h3>
-              </div>
-            </div>
-          </a>
-
+        <div class="d-none d-md-flex ms-3 socials">
+          <a href="#" class="me-2"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="me-2"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="me-2"><i class="bi bi-instagram"></i></a>
         </div>
       </div>
-      <!-- ====== /CATERING TILES ====== -->
 
     </div>
-  </section>
-  <!-- =============== /ORDER SECTION =============== -->
-
-
-  <!-- =============== JOIN E-CLUB CTA =============== -->
-  <section class="py-5 text-center" style="background:#344765;color:white;">
-    <div class="container">
-      <h2 class="fw-bold">Join our E-Club for exclusive offers right to your inbox</h2>
-      <a href="eclub.html" class="btn btn-danger mt-3 px-5 py-2">JOIN NOW</a>
-    </div>
-  </section>
-  <!-- =============== /JOIN E-CLUB CTA =============== -->
-
-
-  <!-- =============== FOOTER (same style as index) =============== -->
-  <footer class="footer-section">
-    <div class="container py-5">
-
-      <div class="row text-center text-md-start gy-4">
-
-        <div class="col-12 col-md-2">
-          <h6 class="footer-title">CATERING</h6>
-          <a href="#" class="footer-link d-block">Order Catering</a>
-        </div>
-
-        <div class="col-12 col-md-2">
-          <h6 class="footer-title">PRIVATE EVENTS</h6>
-          <a href="#" class="footer-link d-block">Schedule Your Event</a>
-        </div>
-
-        <div class="col-12 col-md-2">
-          <h6 class="footer-title">ABOUT MIMI’S</h6>
-          <a href="#" class="footer-link d-block">Our Story</a>
-          <a href="#" class="footer-link d-block">Careers</a>
-          <a href="#" class="footer-link d-block">Gift Cards</a>
-          <a href="#" class="footer-link d-block">Contact Us</a>
-        </div>
-
-        <div class="col-12 col-md-3">
-          <h6 class="footer-title">CONTACT US</h6>
-          <p class="footer-text mb-1">Guest Relations:</p>
-          <a href="#" class="footer-link d-block">GuestRelations@mimiscafe.com</a>
-
-          <p class="footer-text mt-3 mb-1">Media Inquiries:</p>
-          <a href="#" class="footer-link d-block">MediaRelations@mimiscafe.com</a>
-        </div>
-
-        <div class="col-12 col-md-3">
-          <h6 class="footer-title">STAY CONNECTED</h6>
-          <a href="#" class="footer-link d-block">Join Mimi’s E-Club</a>
-
-          <div class="footer-social mt-3">
-            <a href="#" class="footer-social-icon"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="footer-social-icon"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="footer-social-icon"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="footer-social-icon"><i class="bi bi-pinterest"></i></a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="footer-bottom text-center py-3">
-      © 2022 MIMI'S CAFE CORPORATE | TERMS & CONDITIONS | PRIVACY POLICY
-    </div>
-  </footer>
-  <!-- =============== /FOOTER =============== -->
-
- 
-  <div class="access-btn">
-    <img src="assets/ac.png" alt="Accessibility Icon">
   </div>
+</header>
+
+<!-- ================= ORDER SECTION ================= -->
+<section class="catering-order-section">
+  <div class="container">
+
+    <div class="row align-items-center text-center">
+
+      <!-- TOP LINE -->
+      <div class="col-12 mb-4">
+        <div class="order-line anim-fade-up"></div>
+      </div>
+
+      <!-- ORDER TO-GO -->
+      <div class="col-12 col-md-5 mb-5">
+        <img src="assets/ordertogo4.png" class="catering-order-logo anim-pop delay-100" alt="Order to-go">
+        <div class="catering-order-title anim-pop delay-150">ORDER<br>TO-GO</div>
+        <button class="catering-order-btn anim-pop-btn delay-200">ORDER NOW</button>
+      </div>
+
+      <!-- CENTER VERTICAL DIVIDER -->
+      <div class="col-md-2 d-none d-md-flex justify-content-center">
+        <div class="vertical-divider anim-fade-up delay-120"></div>
+      </div>
+
+      <!-- ORDER CATERING -->
+      <div class="col-12 col-md-5 mb-5">
+        <img src="assets/OrderCateringbutton.png" class="catering-order-logo anim-pop delay-100" alt="Order catering">
+        <div class="catering-order-title anim-pop delay-150">ORDER<br>CATERING</div>
+        <button class="catering-order-btn anim-pop-btn delay-200">PLACE ORDER</button>
+      </div>
+
+      <!-- BOTTOM LINE -->
+      <div class="col-12 mt-4">
+        <div class="order-line anim-fade-up delay-240"></div>
+      </div>
+
+    </div>
+    <!-- ====== CATERING TILES (HTML-only, no JS) ====== -->
+<div class="catering-tiles container mt-4">
+  <div class="catering-grid">
+
+    <a class="tile-link" href="#breakfast" aria-label="Breakfast trays and pastries">
+      <div class="tile anim-fade-up delay-100" style="background-image: url('assets/Breakfast.jpg');">
+        <div class="tile-overlay"></div>
+        <div class="tile-content">
+          <h3>BREAKFAST TRAYS &amp;<br>PASTRIES</h3>
+        </div>
+      </div>
+    </a>
+
+    <a class="tile-link" href="#feast" aria-label="Order your holiday feast">
+      <div class="tile anim-fade-up delay-200" style="background-image: url('assets/2025Feast.jpg');">
+        <div class="tile-overlay"></div>
+        <div class="tile-content">
+          <h3>ORDER YOUR HOLIDAY<br>FEAST HERE</h3>
+        </div>
+      </div>
+    </a>
+
+    <a class="tile-link" href="#menu" aria-label="Full catering menu">
+      <div class="tile anim-fade-up delay-300" style="background-image: url('assets/Sandwich.jpg');">
+        <div class="tile-overlay"></div>
+        <div class="tile-content">
+          <h3>FULL CATERING MENU</h3>
+        </div>
+      </div>
+    </a>
+
+  </div>
+</div>
+<!-- ====== end catering tiles ====== -->
+
+
+
+  </div>
+</section>
+
+
+
+<!-- ================= JOIN E-CLUB CTA ================= -->
+<section class="py-5 text-center" style="background:#344765;color:white;">
+  <div class="container">
+    
+    <h2 class="fw-bold">Join our E-Club for exclusive offers right to your inbox</h2>
+    <a href="eclub.html" class="btn btn-danger mt-3 px-5 py-2">JOIN NOW</a>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-column">
+      <h4>MENU</h4>
+      <ul>
+        <li><a href="#">Breakfast</a></li>
+        <li><a href="#">Lunch & Dinner</a></li>
+        <li><a href="#">Kids Menu</a></li>
+        <li><a href="#">Seasonal Offerings</a></li>
+        <li><a href="#">Gluten Friendly Menu</a></li>
+        <li><a href="#">Nutritional Info</a></li>
+        <li><a href="#">Allergen Info</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>CATERING</h4>
+      <ul>
+        <li><a href="#">Order Catering</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>PRIVATE EVENTS</h4>
+      <ul>
+        <li><a href="#">Schedule Your Event</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>ABOUT MIMI'S</h4>
+      <ul>
+        <li><a href="#">Our Story</a></li>
+        <li><a href="#">Happenings</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Gift Cards</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>CONTACT US</h4>
+      <p>Guest Relations:<br>
+        <a href="#">GuestRelations@mimiscafe.com</a></p>
+
+      <p>Media Inquiries:<br>
+        <a href="#">MediaRelations@mimiscafe.com</a></p>
+    </div>
+
+    <div class="footer-column">
+      <h4>STAY CONNECTED</h4>
+      <ul>
+        <li><a href="#">Join Mimi's E-Club</a></li>
+      </ul>
+
+      <h4>FOLLOW US</h4>
+      <div class="social-icons">
+        <span class="icon"></span>
+        <span class="icon"></span>
+        <span class="icon"></span>
+        <span class="icon"></span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2019 SWH MIMI’S CAFE, LLC | TERMS & CONDITIONS | PRIVACY POLICY</p>
+    <p class="powered">POWERED BY MONKEYMEDIA SOFTWARE 🐒</p>
+  </div>
+</footer>
+
 
 </body>
 </html>
